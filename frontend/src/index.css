@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+    --font-heading: "Vidaloka", serif;
+    --font-body: "Jost", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+    --breakpoint-xs: 475px;
+    --breakpoint-xxs: 300px;
+    --breakpoint-cstm: 350px;
+    --breakpoint-cstmv: 313px;
+    --breakpoint-cstmvv:524px;
+    --breakpoint-cstmvvv:390px;
+}
+
+:root {
+    --font-heading: "Vidaloka", serif;
+    --font-body: "Jost", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+    --breakpoint-xs: 475px;
+    --breakpoint-xxs: 300px;
+    --breakpoint-cstm: 366px;
+    --main-gradient: linear-gradient(90deg, #F69220 .04%, #F68E20 28.67%, #F48421 54.05%, #F37221 78.11%, #F05A22 100.04%);
+    --main-gradient-rev: linear-gradient(270deg, #F69220 .04%, #F68E20 28.67%, #F48421 54.05%, #F37221 78.11%, #F05A22 100.04%);
+    --gray-h: 0;
+    --gray-s: 0%;
+    --gray-l: 97%;
+    --gray: var(--gray-h) var(--gray-s) var(--gray-l);
+    --body-color: var(--gray);
+}
+
+html {
+    scroll-behavior: smooth;
+}

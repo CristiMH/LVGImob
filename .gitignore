@@ -1,0 +1,46 @@
+# --- Global ---
+.env
+*.log
+*.pyc
+__pycache__/
+.DS_Store
+Thumbs.db
+
+# --- Python (Backend) ---
+/env/
+/backend/media/
+/backend/__pycache__/
+/backend/api/__pycache__/
+/backend/backend/__pycache__/
+*.sqlite3
+
+# --- Node/Vite (Frontend) ---
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.vite/
+/frontend/.next/
+/frontend/.nuxt/
+/frontend/.output/
+/frontend/.cache/
+
+# --- OS/System/IDE ---
+*.swp
+*.swo
+*.bak
+*.tmp
+.vscode/
+.idea/
+*.iml
+
+# --- Docker ---
+*.pid
+*.tar
+docker-compose.override.yml
+
+# --- Log files ---
+*.log
+
+# --- Misc ---
+.env.local
+.env.development
+.env.production

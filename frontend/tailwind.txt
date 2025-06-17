@@ -1,0 +1,6 @@
+dark-bg: #272727
+dark-text: #181616
+sec-color: #d5ab63
+third-color: #F69220
+#202424
+#ececec

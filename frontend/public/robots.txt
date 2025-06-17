@@ -1,0 +1,34 @@
+User-agent: *
+Disallow: /utilizatori
+Disallow: /mesaje
+Disallow: /cereri
+Disallow: /conditii
+Disallow: /incalzire
+Disallow: /planificare
+Disallow: /constructie
+Disallow: /suprafata
+Disallow: /locatie
+Disallow: /sectoare
+Disallow: /admin/
+Disallow: /resetare-parola
+Disallow: /logout
+Disallow: /404
+Disallow: /error
+
+# Only allow these:
+Allow: /
+Allow: /login
+Allow: /contacte
+Allow: /cerere
+Allow: /apartamente
+Allow: /apartamente/
+Allow: /apartamente/*
+Allow: /case
+Allow: /case/
+Allow: /case/*
+Allow: /terenuri
+Allow: /terenuri/
+Allow: /terenuri/*
+Allow: /spatii-comerciale
+Allow: /spatii-comerciale/
+Allow: /spatii-comerciale/*

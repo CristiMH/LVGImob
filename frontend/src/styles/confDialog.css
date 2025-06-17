@@ -1,0 +1,17 @@
+.p-confirm-dialog {
+  padding: 1.1rem !important;
+  background: white;
+}
+
+.p-confirm-dialog .p-dialog-footer {
+  gap: 22px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+}
+
+.p-confirm-dialog .p-dialog-content {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}

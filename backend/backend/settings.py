@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-@24yozq=(-xc1w1e+#b1_^5jsey&9#gs%*1q%92g@dbtt_u_!-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["lvgimob.md", "www.lvgimob.md"]
 
 
 # Application definition
@@ -142,7 +142,10 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = False
+CORS_ALLOWED_ORIGINS = [
+    "https://lvgimob.md",
+]
 CORS_ALLOWS_CREDENTIALS = True
 CORS_ALLOW_CREDENTIALS = True
 

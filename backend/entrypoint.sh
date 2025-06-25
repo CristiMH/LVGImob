@@ -16,6 +16,26 @@ for name in ['Proprietar', 'Administrator', 'Agent']:
     UserType.objects.get_or_create(type=name)
 "
 
+echo "🏷️ Creez SaleType-uri de bază..."
+python -c "
+import os, django
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')
+django.setup()
+from api.models import SaleType
+for name in ['Vânzare', 'Chirie']:
+    SaleType.objects.get_or_create(type=name)
+"
+
+echo "🏘️ Creez PropertyType-uri de bază..."
+python -c "
+import os, django
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')
+django.setup()
+from api.models import PropertyType
+for name in ['Apartamente', 'Case', 'Spații comerciale', 'Terenuri']:
+    PropertyType.objects.get_or_create(type=name)
+"
+
 echo "👤 Creez superuser..."
 python -c "
 import os, django

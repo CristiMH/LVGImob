@@ -190,7 +190,7 @@ class PasswordResetRequestView(generics.GenericAPIView):
         uid = urlsafe_base64_encode(force_bytes(user.pk))
         token = token_generator.make_token(user)
         
-        reset_link = f"http://localhost:3000/resetare-parola/{uid}/{token}"
+        reset_link = f"https://lvgimob.md/resetare-parola/{uid}/{token}"
         send_mail(
             'Resetare parolă',
             f'Apasă pe linkul următor pentru a-ți reseta parola: {reset_link}',

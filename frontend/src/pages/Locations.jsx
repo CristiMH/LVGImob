@@ -151,7 +151,7 @@ const Locations = () => {
                                                             <td className="py-[10px] text-center">{row.location}</td>
                                                             <td className="text-center">
                                                                 {
-                                                                    row.id != 1 && (
+                                                                    row.id != 1 && row.id != 2 && row.id != 3 && (
                                                                         <>
                                                                             <button
                                                                                 className="bg-blue-500 text-white cursor-pointer rounded-[5px] px-[6px] py-[2px] hover:bg-blue-700 transition-all duration-75 ease-in"

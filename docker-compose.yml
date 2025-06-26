@@ -7,7 +7,7 @@ services:
       - "8000:8000"
     volumes:
       - ./backend:/app
-      - ./backend/wait-for-it.sh:/wait-for-it.sh
+      - ./backend/wait-for-it.sh:/wait-for-it.sh:ro
     environment:
       - DB_HOST=db
       - DB_PORT=3306

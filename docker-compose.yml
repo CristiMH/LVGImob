@@ -8,6 +8,7 @@ services:
     volumes:
       - ./backend:/app
       - ./backend/wait-for-it.sh:/wait-for-it.sh:ro
+      - ./backend/media:/app/media
     environment:
       - DB_HOST=db
       - DB_PORT=3306

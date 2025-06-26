@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
     gcc \
     libssl-dev \
     libffi-dev \
-    netcat-openbsd \
+    netcat-traditional \
  && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app

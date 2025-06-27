@@ -29,6 +29,7 @@ import Houses from './pages/Houses';
 import Lands from './pages/Lands';
 import Spaces from './pages/Spaces';
 import Error from './pages/Error';
+import RedirectHandler from './pages/RedirectHandler';
 
 export default function AppRoutes() {
   return (
@@ -40,7 +41,7 @@ export default function AppRoutes() {
       <Route path='/contacte' element={<Contact />} />
       <Route path='/cerere' element={<Request />} />
       <Route path='/404' element={<Error />} />
-      <Route path="*" element={<Error />} />
+      <Route path="/:category/:city/:type" element={<RedirectHandler />} />
 
       <Route path='/utilizatori' element={<ProtectedRoute>
         <ControlPanel />
@@ -95,6 +96,7 @@ export default function AppRoutes() {
       <Route path='/terenuri' element={<Lands />} />
       <Route path='/spatii-comerciale' element={<Spaces />} />
 
+      <Route path="*" element={<Error />} />
     </Routes>
   );
 }

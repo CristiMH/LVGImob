@@ -321,6 +321,7 @@ const Apartments = () => {
                                 <div className="w-full">
 
                                     <div className="flex flex-col gap-[25px]">
+                                        <h1 class="text-[20px] font-[500]">{`${saleTypeText} apartamente în ${sectorText !== '' ? `${sectorText}, ` : ''} ${locationText}`}</h1>
                                         <div className="flex xl:flex-row flex-col gap-4 xl:justify-between mb-4">
                                             <div className="flex xl:hidden gap-[10px] flex-wrap font-body">
                                                 <div
